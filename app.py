@@ -13,7 +13,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_huggingface import HuggingFaceEndpoint
 
-from SECRET_API_KEYS import huggingface_api_key  # Set the Hugging Face Hub API token as an environment variable
+from secret_api_keys import huggingface_api_key  # Set the Hugging Face Hub API token as an environment variable
 os.environ['HUGGINGFACEHUB_API_TOKEN'] = huggingface_api_key
 
 def process_input(input_type, input_data):
